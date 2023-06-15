@@ -8,7 +8,7 @@
 
     {{#each resume.work}}
     <section class="item">
-        {{> section-header name=this.company }}
+        {{> section-header name=this.company website=this.url showWebsite=true }}
 
         {{#if position}}
         <h4>{{position}}</h4>
