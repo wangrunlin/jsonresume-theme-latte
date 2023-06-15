@@ -1,0 +1,23 @@
+{{#if resume.awards.length}}
+<div class="container awards-container">
+    {{#if chinese}}
+    {{> title value="奖项"}}
+    {{else}}
+    {{> title value="Awards"}}
+    {{/if}}
+
+    {{#each resume.awards}}
+    <section class="item">
+        {{> section-header name=this.title }}
+
+        {{#if awarder}}
+        <h5 class="awarder">{{awarder}}</h5>
+        {{/if}}
+
+        {{#if summary}}
+        <p class="summary">{{summary}}</p>
+        {{/if}}
+    </section>
+    {{/each}}
+</div>
+{{/if}}

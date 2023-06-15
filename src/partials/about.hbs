@@ -1,0 +1,38 @@
+<div class="container about-container">
+
+    {{#if chinese}}
+    {{> title value="联系方式"}}
+    {{else}}
+    {{> title value="Contact"}}
+    {{/if}}
+
+    {{#resume.basics}}
+    {{#if location}}
+    {{#location}}
+    {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
+    {{/location}}
+    {{/if}}
+
+    {{#if birthday}}
+    {{> info-tag text=(concat "Born in " this.birthday) icon="fa-calendar"}}
+    {{/if}}
+
+    {{#if email}}
+    {{> info-tag text=this.email icon="fa-envelope-o" isEmail=true url=this.email}}
+    {{/if}}
+
+    {{#if phone}}
+    {{> info-tag text=this.phone icon="fa-mobile" isPhone=true url=this.phone}}
+    {{/if}}
+
+    {{#if website}}
+    {{> info-tag text=this.website icon="fa-globe" url=this.website}}
+    {{/if}}
+
+    {{#if profiles}}
+    {{#each profiles}}
+    {{> social}}
+    {{/each}}
+    {{/if}}
+    {{/resume.basics}}
+</div>

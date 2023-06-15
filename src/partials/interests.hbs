@@ -1,0 +1,24 @@
+{{#if resume.interests.length}}
+<div class="container interests-container">
+    {{#if chinese}}
+    {{> title value="个人兴趣"}}
+    {{else}}
+    {{> title value="Interests"}}
+    {{/if}}
+
+    {{#each resume.interests}}
+    <section class="item">
+        {{#if name}}
+        <h4 class="bold">{{name}}</h4>
+        {{/if}}
+        {{#if keywords.length}}
+        <ul class="minimal">
+            {{#each keywords}}
+            <li>{{.}}</li>
+            {{/each}}
+        </ul>
+        {{/if}}
+    </section>
+    {{/each}}
+</div>
+{{/if}}

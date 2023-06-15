@@ -1,0 +1,15 @@
+{{#if resume.basics.summary}}
+<div class="container summary-container">
+    {{#if chinese}}
+    {{> title value="个人简介"}}
+    {{else}}
+    {{> title value="Summary"}}
+    {{/if}}
+
+    {{#resume.basics}}
+    <p class="summary">
+        {{summary}}
+    </p>
+    {{/resume.basics}}
+</div>
+{{/if}}
