@@ -2,6 +2,7 @@ const { toMatchImageSnapshot } = require('jest-image-snapshot');
 const fs = require('fs');
 const path = require('path');
 const puppeteer = require('puppeteer');
+const YAML = require('yamljs');
 const { render } = require('../../index');
 
 expect.extend({ toMatchImageSnapshot });
@@ -13,8 +14,9 @@ describe('jest-image-snapshot usage with an image received from puppeteer', () =
 
   beforeAll(async () => {
     browser = await puppeteer.launch();
-    const resumeJson = JSON.parse(fs.readFileSync(path.join(rootDir, 'resume.json')));
-    const resumeHtml = render(resumeJson);
+    const resumeYaml = fs.readFileSync(path.join(rootDir, 'resume.yaml'));
+    const resume = await YAML.parse(resumeYaml.toString());
+    const resumeHtml = render(resume);
     fs.writeFileSync(path.join(rootDir, 'resume.html'), resumeHtml);
   });
 
