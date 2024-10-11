@@ -7,7 +7,6 @@ basics:
   email: alin.runlin@gmail.com
   phone: +86 177-7859-5680
   url: https://wangrunlin.com
-  website: https://wangrunlin.com
   summary: "Web/JavaScript 全栈开发, 开源贡献者，技术社区共建者。键盘党，喜欢各种高效 CLI 工具。有 Geek 范，认同 UNIX 设计哲学，Vimer。善于协作沟通，有团队沟通协作、项目进度及时间管理实践基础。一个终身学习者，持续学习，热爱分享，技术视野开阔，对业界新技术敏感。有代码洁癖和工程思想，期望成为创造价值的工程师，不是售卖劳力的程序员。"
   location:
     address:
@@ -23,10 +22,10 @@ basics:
       username: wangrunlin_
       url: https://twitter.com/wangrunlin_
 work:
-  - company: idea2App
+  - company: idea2app
     location: 成都
     position: 全栈开发
-    url: https://idea2.App
+    url: https://idea2app.cn
     startDate: 2022-09-24
     summary: 为企业或团队提供业务信息化咨询，定制化软件开发等服务
     highlights:
@@ -47,6 +46,72 @@ work:
       - 实施和维护 RESTful API，为前端团队提供稳定的数据交互接口
       - 参与跨部门的技术会议，与团队合作解决技术挑战和改进工作流程
 projects:
+  - name: ZKCross 官网
+    description: ZKCross 官网是一个旨在介绍和促进零知识证明（Zero-Knowledge Proofs）的在线平台。作为前端开发和项目 Leader，我独立负责了整个官网的开发和项目管理。
+    highlights:
+      - 作为前端开发工程师，负责官网的前端设计和开发。使用HTML、CSS、JavaScript以及React框架，创建了一个现代、响应式的用户界面。
+      - 在项目中，我担任了项目 Leader 的角色，负责项目的整体规划、技术选型和功能开发。我从头到尾独立完成了官网的前端部分。
+      - 通过优化用户界面、交互设计和页面布局，提高了用户体验，使官网更易于理解和使用。
+      - 负责项目的时间表、任务分配和进度追踪，以确保项目按时交付。
+      - 成功交付了一个现代、响应式的 ZKCross 官网，提高了用户对零知识证明的理解。
+      - 通过性能优化和数据可视化，改进了官网的性能和用户体验，吸引了更多的访问者和社区成员。
+      - 项目的按时交付，确保了官网在规定时间内上线，满足了社区的需求。
+    keywords:
+      - Next.js
+      - React
+      - TypeScript
+    startDate: 2023-09-03
+    endDate: 2023-09-19
+    url: https://zkcross.org
+    roles:
+      - 前端开发
+      - 项目负责人
+    entity: ZKCross
+    type: website
+  - name: ZKCross Fusion Layer
+    description: ZKC-FusionLayer Gateway 是一个基于 Node.js, ethers.js 的后端网关，用于处理和管理数据流、安全性、身份验证以及与不同服务之间的通信。作为项目 Leader，我负责项目的整体规划、技术架构设计、开发和团队管理。
+    highlights:
+      - 作为项目 Leader，负责项目的整体管理和领导。
+      - 确定了项目的技术架构，包括后端服务器和数据库的选择，以满足性能、可扩展性和安全性要求。
+      - 在项目的早期，我直接参与了后端的开发，使用 Node.js, ethers.js 和相关技术构建了核心功能，如请求路由、数据处理和身份验证等。
+      - 设计和实施了数据管理策略，包括数据存储、检索和更新，以满足应用程序的需求。
+      - 通过实施身份验证和授权机制，保护了数据流和通信的安全性，确保敏感信息的保密性。
+      - 编写技术文档，以记录项目的架构和工作流程。
+      - 推动项目的不断改进，通过团队反馈和用户需求来更新和扩展功能。
+    keywords:
+      - Node.js
+      - TypeScript
+    startDate: 2023-07-10
+    endDate: 2023-10-30
+    url: https://rpc.zkcross.org/docs
+    roles:
+      - 后端开发
+    entity: ZKCross
+    type: backend server
+  - name: 开源社官网
+    description: 开源社官网
+    highlights:
+      - 负责官网的前端开发，使用 HTML、CSS、JavaScript 以及前端框架 React、Next.js 创建响应式用户界面。通过采用现代的前端技术，改进了官网的外观和交互体验，提高了用户参与度。
+      - 建立了自动化部署流程，包括持续集成和持续部署（CI/CD），以确保网站的高可用性和及时更新。同时，负责监控和故障排除，以降低宕机时间。
+      - 优化了官网的性能，通过压缩和缓存静态资源、减少 HTTP 请求和引入图像压缩等措施，提高了网站的加载速度。
+      - 与社区互动，收集用户反馈，解决问题和改进用户体验。维护联系方式，提供支持和指导。
+      - 及时更新网站的内容和功能，以反映开源社的最新活动和资源。升级依赖库和框架，以确保网站的持续运行。
+      - 官网的用户体验得到改进，用户满意度提高，吸引了更多的访问者和社区成员。
+      - 运维自动化流程的引入，提高了网站的稳定性和可用性，减少了运维工作量。
+      - 安全性措施的实施，保护了用户数据和网站免受恶意攻击。
+      - 性能优化的结果，减少了页面加载时间，提高了网站的整体性能。
+    keywords:
+      - Next.js
+      - React
+      - TypeScript
+      - Feishu
+    startDate: 2023-02-01
+    url: https://kaiyuanshe.cn
+    roles:
+      - 前端开发
+      - 运维
+    entity: 开源社
+    type: website
   - name: UNDP SPARK LAB 官网
     description: 联合国开发计划署可持续发展创新实验室（成都）
     highlights:
@@ -71,7 +136,7 @@ projects:
       - 项目负责人
       - 开发者
       - 设计
-    entity: idea2App
+    entity: idea2app
     type: website
   - name: LaRoNa 区块链官网
     description:
@@ -90,7 +155,7 @@ projects:
     roles:
       - 开发者
       - 前端
-    entity: idea2App
+    entity: idea2app
     type: website
   - name: 金融分期 App
     description:
@@ -118,7 +183,7 @@ projects:
       - 项目负责人
       - 开发者
       - 前端
-    entity: idea2App
+    entity: idea2app
     type: app
   - name: 开放黑客松
     description: 开放黑客马拉松是由开源社发起的一项旨在促进开源文化和创新的活动。该项目为参与者提供了一个合作开发的平台，鼓励他们利用开源技术和创意解决方案来解决社会问题
@@ -224,6 +289,31 @@ awards:
     awarder:
     summary:
 publications:
+  - name: Copy Title Extension
+    publisher: wangrunlin
+    releaseDate: 2024-09-11
+    url: https://chromewebstore.google.com/detail/copy-page-title/cofmmgbikdpfpdecffpknclhhlnbfnlg
+    summary: Copy Title Extension 是一个 Chrome 扩展，用于复制网页标题
+  - name: 2024 年 COSCUP 会议演讲 - 数字游民在中国大陆的发展
+    publisher: wangrunlin
+    releaseDate: 2024-08-04
+    url: https://coscup.org/2024/zh-TW/session/VSD9GU
+    summary: 在 2024 年 COSCUP 会议上，我分享了关于数字游民在中国大陆的发展的演讲。
+  - name: Android Copy Link
+    publisher: wangrunlin
+    releaseDate: 2024-04-22
+    url: https://github.com/wangrunlin/android-copy-link
+    summary: Android 复制链接 是一款时尚的渐进式 Web 应用程序 (PWA)，旨在提供专为 Android 设备量身定制的无缝且高效的链接复制体验。
+  - name: jsonresume-theme-latte
+    publisher: wangrunlin
+    releaseDate: 2023-06-15
+    url: https://github.com/wangrunlin/jsonresume-theme-latte
+    summary: Latte 是一个基于 Theme Boilerplate、Caffeine Theme 和 Macchiato Theme 的 JSON Resume 主题
+  - name: open-digger-cli
+    publisher: wangrunlin
+    releaseDate: 2023-07-03
+    url: https://github.com/wangrunlin/open-digger-cli
+    summary: 基于 [OpenDigger](https://github.com/X-lab2017/open-digger/) 的 CLI 工具
   - name: JetBrains Nerd Font for Windows
     publisher: wangrunlin
     releaseDate: 2021-07-09
@@ -270,6 +360,7 @@ interests:
     keywords:
       - 骑行
       - 篮球
+      - 滑雪
 meta:
   canonical: https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json
   version: v1.0.0
