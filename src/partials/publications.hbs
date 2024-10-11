@@ -8,7 +8,7 @@
 
     {{#each resume.publications}}
     <section class="item">
-        {{> section-header name=this.name}}
+        {{> section-header name=this.name website=this.url showWebsite=true }}
 
         {{#if publisher}}
         <h5 class="awarder">{{publisher}}</h5>
